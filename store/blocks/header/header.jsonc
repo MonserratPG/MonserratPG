@@ -1,0 +1,1143 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop",     
+      "sticky-layout#4-desktop",
+      "flex-layout.row#3-desktop"
+    ]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#2-desktop": {
+    "children": [
+      "flex-layout.col#notbarcol1",
+      "flex-layout.col#notbarcol2",
+      "flex-layout.col#notbarcol3"
+      //"notification.bar#home"
+    ],
+    "props": {
+      "fullWidth": "true",
+      "colSizing":"equal",
+      "blockClass":"notifbarow"
+    }
+  },"flex-layout.col#notbarcol1":{
+
+  },
+  "flex-layout.col#notbarcol2":{
+    "children":[
+      "rich-text#notfbar"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },
+  "rich-text#notfbar":{
+    "props":{
+      "blockClass":"notifbar",
+      "text":"ENTREGA INMEDIATA DE 3-5 DÍAS."
+    }
+  },
+  
+  "flex-layout.col#notbarcol3":{
+    "children":[
+      "rich-text#notifbar-llamar"
+    ],"props":{
+      "horizontalAlign":"right"
+    }
+  },
+
+  "rich-text#notifbar-llamar":{
+    "props":{
+      "text":"[LLÁMANOS: 00 0000 0000](tel:+520000000000)",
+      "blockClass":"notifbar"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "ENTREGA INMEDIATA DE 3-5 DÍAS."
+    }
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#localizacion",      
+      "flex-layout.col#log-srch-minicart"
+    ]
+  },
+
+  "flex-layout.col#log-srch-minicart":{
+    "children":[
+      "flex-layout.row#slm"      
+    ]
+  },"flex-layout.row#slm":{
+    "children":[      
+      "rich-text#localizar",
+      "login",
+      "image#heart",
+      "minicart.v2"
+    ],"props":{
+      "horizontalAlign":"right",
+      "blockClass":"rowlsm"
+    }
+  },
+
+  "search-bar":{
+    "blocks": ["autocomplete-result-list.v2"],
+    "props":{
+      "blockClass":"stylesrch",
+      "openAutocompleteOnFocus": true      
+    }
+  },"autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf#srchr"],
+    "props":{
+      "maxSuggestedProducts": 2
+    }
+  },
+  "product-summary.shelf#srchr":{
+    "children":[
+      "stack-layout#prodsum",
+      "product-summary-name",
+      //"flex-layout.col#productRating",
+      "product-summary-space",
+      "flex-layout.row#selling-price-savings",
+      //"product-installments#summary",
+      "add-to-cart-button"
+    ]
+  },
+
+
+
+  "image#heart":{
+    "props":{
+      "src": "assets/wishlist25px.png",
+      "height": 20,
+      "link":{
+        "url":"/account#/wishlist"
+      },
+      "blockClass":"icowishlist"
+    }
+  },
+  
+  "flex-layout.col#localizacion":{
+    "children":[
+      "search-bar"
+    ]
+  },"rich-text#localizar":{
+    "props":{
+      "text": "[UBICACIONES](/stores)",
+      "blockClass":"txtubicaciones"
+    }
+  },
+
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign":"left",
+      "paddingLeft": 8
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    //"children": ["vtex.menu@2.x:menu#category-menu"]
+    "children": ["vtex.menu@2.x:menu#menu-alfrd"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo-mobica.png",
+      "width": "250"
+    }
+  },
+  "header-layout.mobile": {
+    "children": [
+      "notification.bar#home",
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#searchmobile"
+      //"sticky-layout#1-mobile"
+    ]
+  },
+
+  "flex-layout.row#searchmobile":{
+    "children":[
+      "search-bar"
+    ]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "flex-layout.col#locicon",
+      "flex-layout.col#spacer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "flex-layout.col#wishicon",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#wishicon":{
+    "children":[
+      "image#wishicon"
+    ]
+  },"image#wishicon":{
+    "props":{
+      "height":20,
+      "src":"assets/wishlist25px.png",
+      "link":{
+        "url":"/account#/wishlist"
+      }
+    }
+  },
+
+  "flex-layout.col#locicon":{
+    "children":[
+      "image#locicon"
+    ]
+  },
+
+  "image#locicon":{
+    "props":{
+      "height":20,
+      "width":14,
+      "src": "assets/locmobile.png",
+      "link":"#"
+    }
+  },
+
+
+  "drawer": {
+    "children": ["menu#drawer"],"props":{
+      "blockClass":"principal",
+      "isFullWidth":true
+    }
+  },
+
+  "menu#drawer": {
+    "children": [
+      "flex-layout.row#titmen",
+      "flex-layout.row#item1",
+      "flex-layout.row#item2",
+      "flex-layout.row#item3",
+      "flex-layout.row#item4",
+      "flex-layout.row#item5",
+      "flex-layout.row#item6",
+      "flex-layout.row#item7",
+      "flex-layout.row#item8",
+      "flex-layout.row#item9",
+      "flex-layout.row#item10",
+      "flex-layout.row#item11",
+      "flex-layout.row#item12",
+      "flex-layout.row#item13",
+      "flex-layout.row#logindraw",
+      "flex-layout.row#ayudadraw"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "flex-layout.row#titmen":{
+    "children":[
+      "rich-text#titmendraw"
+    ],"props":{
+      "blockClass":"rowtext"
+    }
+  },
+  "rich-text#titmendraw":{
+    "props":{
+      "text": "Productos",
+      "blockClass":"titmendrawer"
+    }
+  },
+  "flex-layout.row#item1":{
+    "children":[
+      "flex-layout.col#imgsala",
+      "flex-layout.col#drawsala"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgsala":{
+    "children":[
+      "image#drsala"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drsala":{
+    "props":{
+      "src":"assets/iconsmen/20x20-sala.png"
+    }
+  },
+  "flex-layout.col#drawsala":{
+    "children":[
+      "drawer#sala"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },
+  "drawer#sala":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"drawersala"
+    },"children":[
+      "flex-layout.col#prueba"
+      
+    ]
+  },"flex-layout.col#prueba":{
+    "children":[
+      "menu-item#itemtitmob1",
+      "menu-item#itesalmob1",
+      "menu-item#itesalmob2",
+      "menu-item#itesalmob3",
+      "menu-item#itesalmob4",
+      "menu-item#itesalmob5",
+      "menu-item#itesalmob6",
+      "menu-item#itesalmob7"
+    ]
+  },
+
+  "menu-item#itemtitmob1":{
+    "props":{
+      "type":"category",
+      "categoryId": 202,
+      "text":"Sala",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#itesalmob1":{
+    "props":{
+      "type":"category",
+      "categoryId": 294,
+      "text":"Colecciones",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itesalmob2":{
+    "props":{
+      "type":"category",
+      "categoryId": 205,
+      "text":"Escuadras",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itesalmob3":{
+    "props":{
+      "type":"category",
+      "categoryId": 210,
+      "text":"Libreros + Consolas",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itesalmob4":{
+    "props":{
+      "type":"category",
+      "categoryId": 206,
+      "text":"Mesas de Acento",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itesalmob5":{
+    "props":{
+      "type":"category",
+      "categoryId": 289,
+      "text":"Nuestra Propuesta",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itesalmob6":{
+    "props":{
+      "type":"category",
+      "categoryId": 204,
+      "text":"Sillones + Butacas + Bancas",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itesalmob7":{
+    "props":{
+      "type":"category",
+      "categoryId": 203,
+      "text":"Sofá + love",
+      "blockClass":"catprinmen"
+    }
+  },
+
+  "flex-layout.row#item2":{
+    "children":[
+      "flex-layout.col#imgrec",
+      "flex-layout.col#drawrec"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgrec":{
+    "children":[
+      "image#drec"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drec":{
+    "props":{
+      "src":"assets/iconsmen/20x20-recamara.png"
+    }
+  },
+  "flex-layout.col#drawrec":{
+    "children":[
+      "drawer#recamara"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"drawer#recamara":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"drawerecamara"
+    },"children":[
+      "flex-layout.col#colmen2"
+    ]
+  },"flex-layout.col#colmen2":{
+    "children":[
+      "menu-item#itemtitmob2",
+      "menu-item#iterecmob1",
+      "menu-item#iterecmob2",
+      "menu-item#iterecmob3",
+      "menu-item#iterecmob4",
+      "menu-item#iterecmob5"
+    ]
+  },
+  "menu-item#itemtitmob2":{
+    "props":{
+      "type":"category",
+      "categoryId": 215,
+      "text":"Recámara",
+      "blockClass":"titcat"
+
+    }
+  },
+  "menu-item#iterecmob1":{
+    "props":{
+      "type":"category",
+      "categoryId": 217,
+      "text":"Burós + Cómodas",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iterecmob2":{
+    "props":{
+      "type":"category",
+      "categoryId": 216,
+      "text":"Cama",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iterecmob3":{
+    "props":{
+      "type":"category",
+      "categoryId": 218,
+      "text":"Colchones",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iterecmob4":{
+    "props":{
+      "type":"category",
+      "categoryId": 295,
+      "text":"Colecciones",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iterecmob5":{
+    "props":{
+      "type":"category",
+      "categoryId": 290,
+      "text":"Nuestra Propuesta",
+      "blockClass":"catprinmen"
+    }
+  },
+
+  "flex-layout.row#item3":{
+    "children":[
+      "flex-layout.col#imgcom",
+      "flex-layout.col#drawcom"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgcom":{
+    "children":[
+      "image#drcom"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drcom":{
+    "props":{
+      "src":"assets/iconsmen/comed.png"
+    }
+  },
+  "flex-layout.col#drawcom":{
+    "children":[
+      "drawer#comedor"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"drawer#comedor":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"drawercomedor"
+    },"children":[
+      "flex-layout.col#colmen3"
+    ]
+  },
+  "flex-layout.col#colmen3":{
+    "children":[
+      "menu-item#itemtitmob3",
+      "menu-item#itecomob1",
+      "menu-item#itecomob2",
+      "menu-item#itecomob3",
+      "menu-item#itecomob4",
+      "menu-item#itecomob5"
+    ]
+  },
+  "menu-item#itemtitmob3":{
+    "props":{
+      "type":"category",
+      "categoryId": 219,
+      "text":"Comedor",
+      "blockClass":"titcat"
+
+    }
+  },
+  "menu-item#itecomob1":{
+    "props":{
+      "type":"category",
+      "categoryId": 223,
+      "text":"Bar",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itecomob2":{
+    "props":{
+      "type":"category",
+      "categoryId": 296,
+      "text":"Colecciones",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itecomob3":{
+    "props":{
+      "type":"category",
+      "categoryId": 220,
+      "text":"Mesas",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itecomob4":{
+    "props":{
+      "type":"category",
+      "categoryId": 221,
+      "text":"Sillas",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itecomob5":{
+    "props":{
+      "type":"category",
+      "categoryId": 222,
+      "text":"Trinchadores",
+      "blockClass":"catprinmen"
+    }
+  },
+
+
+  "flex-layout.row#item4":{
+    "children":[
+      "flex-layout.col#imgofi",
+      "flex-layout.col#drawofi"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgofi":{
+    "children":[
+      "image#drofi"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drofi":{
+    "props":{
+      "src":"assets/iconsmen/20x20-oficina.png"
+    }
+  },
+  "flex-layout.col#drawofi":{
+    "children":[
+      "drawer#oficina"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"drawer#oficina":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"draweroficina"
+    },"children":[
+      "flex-layout.col#colmen4"
+    ]
+  },"flex-layout.col#colmen4":{
+    "children":[
+      "menu-item#itemtit5",
+      "menu-item#itemue51",
+      "menu-item#itemue52"
+    ]
+  },
+
+
+
+  "flex-layout.row#item5":{
+    "children":[
+      "flex-layout.col#imgjar",
+      "flex-layout.col#drawjar"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgjar":{
+    "children":[
+      "image#drjar"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drjar":{
+    "props":{
+      "src":"assets/iconsmen/jardon.png"
+    }
+  },
+  "flex-layout.col#drawjar":{
+    "children":[
+      "drawer#jardin"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  }, "drawer#jardin":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"drawerjardin"
+    },"children":[
+      "flex-layout.col#colmen5"
+    ]
+  },"flex-layout.col#colmen5":{
+    "children":[
+      "menu-item#itemtit4",
+      "menu-item#itemue41",
+      "menu-item#itemue42",
+      "menu-item#itemue43"
+    ]
+  },
+
+
+  "flex-layout.row#item6":{
+    "children":[
+      "flex-layout.col#imgdec",
+      "flex-layout.col#drawdec"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgdec":{
+    "children":[
+      "image#drdec"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drdec":{
+    "props":{
+      "src":"assets/iconsmen/comed.png"
+    }
+  },
+  "flex-layout.col#drawdec":{
+    "children":[
+      "drawer#decoracion"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"drawer#decoracion":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"drawerdecora"
+    },"children":[
+      "flex-layout.col#colmen6"
+    ]
+  },
+  "flex-layout.col#colmen6":{
+    "children":[
+      "menu-item#accesktit1",
+      "menu-item#iteaccesk1",
+      "menu-item#iteaccesk2",
+      "menu-item#iteaccesk3",
+      "menu-item#iteaccesk4",
+      "menu-item#iteaccesk5",
+      "menu-item#iteaccesk6",
+      "menu-item#iteaccesk7",
+      "menu-item#iteaccesk8",
+      "menu-item#iteaccesk9",
+      "menu-item#iteaccesk10",
+      "menu-item#iteaccesk11"
+    ]
+  },
+
+
+  "flex-layout.row#item7":{
+    "children":[
+      "flex-layout.col#imgilu",
+      "flex-layout.col#drawilu"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgilu":{
+    "children":[
+      "image#drilu"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drilu":{
+    "props":{
+      "src":"assets/iconsmen/ilumin.png"
+    }
+  },
+  "flex-layout.col#drawilu":{
+    "children":[
+      "drawer#iluminacion"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"drawer#iluminacion":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"drawerilumina"
+    },"children":[
+      "flex-layout.col#colmen7"
+    ]
+  },"flex-layout.col#colmen7":{
+    "children":[
+      "menu-item#accesktit3",
+      "menu-item#iteaccesk31",
+      "menu-item#iteaccesk32",
+      "menu-item#iteaccesk33"
+    ]
+  },
+
+
+  "flex-layout.row#item8":{
+    "children":[
+      "flex-layout.col#imgmes",
+      "flex-layout.col#drawmes"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgmes":{
+    "children":[
+      "image#drmes"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drmes":{
+    "props":{
+      "src":"assets/iconsmen/jardon.png"
+    }
+  },
+  "flex-layout.col#drawmes":{
+    "children":[
+      "drawer#mesabar"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"drawer#mesabar":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"drawermesabar"
+    },"children":[
+      "flex-layout.col#colmen8"
+    ]
+  },"flex-layout.col#colmen8":{
+    "children":[
+      "menu-item#accesktit5",
+      "menu-item#iteaccesk51",
+      "menu-item#iteaccesk52",
+      "menu-item#iteaccesk53",
+      "menu-item#iteaccesk54",
+      "menu-item#iteaccesk55",
+      "menu-item#iteaccesk56",
+      "menu-item#iteaccesk57",
+      "menu-item#iteaccesk58"
+    ]
+  },
+
+
+  "flex-layout.row#item9":{
+    "children":[
+      "flex-layout.col#imgcoc",
+      "flex-layout.col#drawcoc"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgcoc":{
+    "children":[
+      "image#drcoc"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drcoc":{
+    "props":{
+      "src":"assets/iconsmen/comed.png"
+    }
+  },
+  "flex-layout.col#drawcoc":{
+    "children":[
+      "drawer#cocina"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"drawer#cocina":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"drawercocina"
+    },"children":[
+      "flex-layout.col#colmen9"
+    ]
+  },"flex-layout.col#colmen9":{
+    "children":[
+      "menu-item#accesktit4",
+      "menu-item#iteaccesk41",
+      "menu-item#iteaccesk42"
+    ]
+  },
+
+  "flex-layout.row#item10":{
+    "children":[
+      "flex-layout.col#imgbano",
+      "flex-layout.col#drawbano"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgbano":{
+    "children":[
+      "image#drbano"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drbano":{
+    "props":{
+      "src":"assets/iconsmen/comed.png"
+    }
+  },
+  "flex-layout.col#drawbano":{
+    "children":[
+      "drawer#bano"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"drawer#bano":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"drawerbano"
+    },"children":[
+      "flex-layout.col#colmen10"
+    ]
+  },"flex-layout.col#colmen10":{
+    "children":[
+      "menu-item#accesktit2",
+      "menu-item#iteaccesk21",
+      "menu-item#iteaccesk22",
+      "menu-item#iteaccesk23",
+      "menu-item#iteaccesk24"
+    ]
+  },
+
+  "flex-layout.row#item11":{
+    "children":[
+      "flex-layout.col#imgelec",
+      "flex-layout.col#drawelec"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgelec":{
+    "children":[
+      "image#drelec"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drelec":{
+    "props":{
+      "src":"assets/iconsmen/comed.png"
+    }
+  },
+  "flex-layout.col#drawelec":{
+    "children":[
+      "drawer#electronicos"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"drawer#electronicos":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"drawerelectro"
+    },"children":[
+      "flex-layout.col#colmen11"
+    ]
+  },"flex-layout.col#colmen11":{
+    "children":[
+      "menu-item#electrodesktit1",
+      "menu-item#iteelectrodesk1",
+      "menu-item#iteelectrodesk2",
+      "menu-item#iteelectrodesk3"
+    ]
+  },
+
+
+
+  "flex-layout.row#item12":{
+    "children":[
+      "flex-layout.col#imgnov",
+      "flex-layout.col#drawnov"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgnov":{
+    "children":[
+      //"image#drnov"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drnov":{
+    "props":{
+      "src":"assets/iconsmen/comed.png"
+    }
+  },
+  "flex-layout.col#drawnov":{
+    "children":[
+      "drawer#novedades"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"drawer#novedades":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"drawernovedades"
+    }
+  },
+
+
+  "flex-layout.row#item13":{
+    "children":[
+      "flex-layout.col#imgofe",
+      "flex-layout.col#drawofe"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemen"
+    }
+  },
+  "flex-layout.col#imgofe":{
+    "children":[
+      //"image#drofe"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drofe":{
+    "props":{
+      "src":"assets/iconsmen/comed.png"
+    }
+  },
+  "flex-layout.col#drawofe":{
+    "children":[
+      "drawer#ofertas"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"drawer#ofertas":{
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"drawerofertas"
+    }
+  },
+
+
+  "flex-layout.row#logindraw":{
+    "children":[
+      "flex-layout.col#logdr",
+      "flex-layout.col#titloginmen"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemenlog"
+    }
+  },
+  "flex-layout.col#logdr":{
+    "children":[
+      "image#drlogin"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drlogin":{
+    "props":{
+      "src":"assets/account.png"
+    }
+  },
+  "flex-layout.col#titloginmen":{
+    "children":[
+      "rich-text#titlogin"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"rich-text#titlogin":{
+    "props":{
+      "text": "[REGISTRARSE / CREAR CUENTA](/account)",
+      "blockClass":"itemtit"
+    }
+  },
+
+
+  "flex-layout.row#ayudadraw":{
+    "children":[
+      "flex-layout.col#imgayudadr",
+      "flex-layout.col#titayudamen"
+    ],"props":{
+      "preserveLayoutOnMobile":true,
+      "blockClass":"rowitemenayuda"
+    }
+  },
+  "flex-layout.col#imgayudadr":{
+    "children":[
+      "image#drayuda"
+    ],"props":{
+      "width":"20%",
+      "verticalAlign":"middle",
+      "horizontalAlign":"center",
+      "blockClass":"imgmen"
+    }
+  },"image#drayuda":{
+    "props":{
+      "src":"assets/account.png"
+    }
+  },
+  "flex-layout.col#titayudamen":{
+    "children":[
+      "rich-text#titayuda"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"rich-text#titayuda":{
+    "props":{
+      "text": "[CONTÁCTANOS](https://mobica--mobicamx.myvtex.com/contacto)",
+      "blockClass":"itemtit"
+    }
+  },
+
+
+
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo-mobica.png",
+      "width": "150"
+    }
+  }
+}

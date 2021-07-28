@@ -1,0 +1,1080 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#mueblesdesk",
+      "menu-item#accesoriosdesk",
+      "menu-item#electrodesk",
+      "menu-item#ofertas",
+      "menu-item#entrega",
+      "menu-item#hooffdesk"
+    ]
+  },
+
+
+
+  "menu-item#mueblesdesk": {
+    "props": {
+      "id": "menu-item-mueblesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"hmen",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Muebles",
+        "text": "Muebles"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#muebles"
+    ]
+  },
+  "vtex.menu@2.x:submenu#muebles": {
+    "props": {
+      "width":"100%",
+      "blockClass":"subcontainer"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-prods"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-prods": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass":"blockmen"
+    },
+    "children": [
+      "flex-layout.row#muebles"
+    ]
+  },
+
+  "flex-layout.row#muebles":{
+    "children":[
+      "flex-layout.col#muebles1",
+      "flex-layout.col#muebles2",
+      "flex-layout.col#muebles3",
+      "flex-layout.col#muebles4",
+      "flex-layout.col#muebles5",
+      "flex-layout.col#imgbanner"
+    ],"props":{
+      "blockClass":"rowmenprin",
+      "fullWdith":true,
+      "colSizing": "auto",
+      "colGap": 2,
+      "horizontalAlign":"center"
+    }
+  },"flex-layout.col#muebles1":{
+    "children":[
+      "menu-item#itemtit1",
+      "menu-item#itemue1",
+      "menu-item#itemue2",
+      "menu-item#itemue3",
+      "menu-item#itemue4",
+      "menu-item#itemue5",
+      "menu-item#itemue6",
+      "menu-item#itemue7",
+      "menu-item#itemue8",
+      "menu-item#itemue9",
+      "menu-item#itemue10"
+
+    ]
+  },
+
+  "menu-item#itemtit1":{
+    "props":{
+      "type":"category",
+      "categoryId": 348,
+      "text":"Muebles",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#itemue1":{
+    "props":{
+      "type":"category",
+      "categoryId": 359,
+      "text":"Sofás",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue2":{
+    "props":{
+      "type":"category",
+      "categoryId": 360,
+      "text":"Loveseats",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue3":{
+    "props":{
+      "type":"category",
+      "categoryId": 361,
+      "text":"Sillones",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue4":{
+    "props":{
+      "type":"category",
+      "categoryId": 363,
+      "text":"Escuadras",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue5":{
+    "props":{
+      "type":"category",
+      "categoryId": 362,
+      "text":"Salas Modulares",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue6":{
+    "props":{
+      "type":"category",
+      "categoryId": 364,
+      "text":"Bancas y Consolas",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue7":{
+    "props":{
+      "type":"category",
+      "categoryId": 365,
+      "text":"Mesas de Centro",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue8":{
+    "props":{
+      "type":"category",
+      "categoryId": 366,
+      "text":"Mesas Laterales y Auxiliares",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue9":{
+    "props":{
+      "type":"category",
+      "categoryId": 346,
+      "text":"Libreros",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue10":{
+    "props":{
+      "type":"category",
+      "categoryId": 347,
+      "text":"Muebles para TV",
+      "blockClass":"catprinmen"
+    }
+  }, 
+  
+  
+  "flex-layout.col#muebles2":{
+    "children":[
+      "menu-item#itemtit2",
+      "menu-item#itemue21",
+      "menu-item#itemue22",
+      "menu-item#itemue23",
+      "menu-item#itemue24"
+    ],"props":{
+      "verticalAlign":"top"
+    }
+  },
+  "menu-item#itemtit2":{
+    "props":{
+      "type":"category",
+      "categoryId": 339,
+      "text":"Recámara",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#itemue21":{
+    "props":{
+      "type":"category",
+      "categoryId": 340,
+      "text":"Cama",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue22":{
+    "props":{
+      "type":"category",
+      "categoryId": 342,
+      "text":"Colchones",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue23":{
+    "props":{
+      "type":"category",
+      "categoryId": 367,
+      "text":"Burós",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue24":{
+    "props":{
+      "type":"category",
+      "categoryId": 368,
+      "text":"Cómodas",
+      "blockClass":"catprinmen"
+    }
+  }, 
+  
+  "flex-layout.col#muebles3":{
+    "children":[
+      "menu-item#itemtit3",
+      "menu-item#itemue31",
+      "menu-item#itemue32",
+      "menu-item#itemue33",
+      "menu-item#itemue34",
+      "menu-item#itemue35"
+    ],"props":{
+      "verticalAlign":"top"
+    }
+  }, 
+  "menu-item#itemtit3":{
+    "props":{
+      "type":"category",
+      "categoryId": 307,
+      "text":"Comedor",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#itemue31":{
+    "props":{
+      "type":"category",
+      "categoryId": 308,
+      "text":"Mesas de Comedor",
+      "blockClass":"catprinmen"
+    }
+  }, "menu-item#itemue32":{
+    "props":{
+      "type":"category",
+      "categoryId": 309,
+      "text":"Sillas",
+      "blockClass":"catprinmen"
+    }
+  }, "menu-item#itemue33":{
+    "props":{
+      "type":"category",
+      "categoryId": 369,
+      "text":"Bancos",
+      "blockClass":"catprinmen"
+    }
+  }, "menu-item#itemue34":{
+    "props":{
+      "type":"category",
+      "categoryId": 310,
+      "text":"Trinchadores",
+      "blockClass":"catprinmen"
+    }
+  }, "menu-item#itemue35":{
+    "props":{
+      "type":"category",
+      "categoryId": 311,
+      "text":"Muebles de Bar",
+      "blockClass":"catprinmen"
+    }
+  },
+
+  "flex-layout.col#muebles4":{
+    "children":[
+      "menu-item#itemtit4",
+      "menu-item#itemue41",
+      "menu-item#itemue42",
+      "menu-item#itemue43"
+    ],"props":{
+      "verticalAlign":"top"
+    }
+  }, 
+  "menu-item#itemtit4":{
+    "props":{
+      "type":"category",
+      "categoryId": 335,
+      "text":"Jardín y Terraza",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#itemue41":{
+    "props":{
+      "type":"category",
+      "categoryId": 336,
+      "text":"Mesas de Jardín",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue42":{
+    "props":{
+      "type":"category",
+      "categoryId": 337,
+      "text":"Sillas de Jardín",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#itemue43":{
+    "props":{
+      "type":"category",
+      "categoryId": 338,
+      "text":"Salas Exterior",
+      "blockClass":"catprinmen"
+    }
+  },  
+  
+  "flex-layout.col#muebles5":{
+    "children":[
+      "menu-item#itemtit5",
+      "menu-item#itemue51",
+      "menu-item#itemue52"
+    ],"props":{
+      "verticalAlign":"top"
+    }
+  },
+  "menu-item#itemtit5":{
+    "props":{
+      "type":"category",
+      "categoryId": 280,
+      "text":"Oficina",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#itemue51":{
+    "props":{
+      "type":"category",
+      "categoryId": 282,
+      "text":"Escritorios",
+      "blockClass":"catprinmen"
+    }
+  }, "menu-item#itemue52":{
+    "props":{
+      "type":"category",
+      "categoryId": 281,
+      "text":"Sillas de Oficina",
+      "blockClass":"catprinmen"
+    }
+  },
+
+  "flex-layout.col#imgbanner":{
+    "children":[
+      "image#mueblesdesk"
+    ],"props":{
+      "verticalAlign":"middle",
+      "horizontalAlign":"center"
+    }
+  },
+  "image#mueblesdesk":{
+    "props":{
+      "src": "assets/sofa.jpg"
+    }
+  },  
+
+
+
+  "menu-item#accesoriosdesk": {
+    "props": {
+      "id": "menu-item-accesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"hmen",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Accesorios",
+        "text": "Accesorios"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#accesk"
+    ]
+  },
+  "vtex.menu@2.x:submenu#accesk": {
+    "props": {
+      "width":"100%",
+      "blockClass":"subcontainer"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#accesk-prods"
+    ]
+  },
+  "vtex.menu@2.x:menu#accesk-prods": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass":"blockmen"
+    },
+    "children": [
+      "flex-layout.row#accesk"
+    ]
+  },
+
+  "flex-layout.row#accesk":{
+    "children":[
+      "flex-layout.col#contentacces",
+      "flex-layout.col#imacces"
+    ],"props":{
+      "blockClass":"rowmenprin",
+      "fullWdith":true,
+      "colSizing": "auto",
+      "colGap": 2,
+      "horizontalAlign":"center"
+    }
+  },
+  "flex-layout.col#contentacces":{
+    "children":[
+      "flex-layout.row#content1",
+      "flex-layout.row#content2"
+    ]
+  },
+  "flex-layout.row#content1":{
+    "children":[
+      "flex-layout.col#acceskcol1",
+      "flex-layout.col#acceskcol2",
+      "flex-layout.col#acceskcol3",
+      "flex-layout.col#acceskcol4",
+      "flex-layout.col#acceskcol5"
+    ]
+  },
+
+  "flex-layout.col#acceskcol1":{
+    "children":[
+      "menu-item#accesktit1",
+      "menu-item#iteaccesk1",
+      "menu-item#iteaccesk2",
+      "menu-item#iteaccesk3",
+      "menu-item#iteaccesk4",
+      "menu-item#iteaccesk5",
+      "menu-item#iteaccesk6",
+      "menu-item#iteaccesk7",
+      "menu-item#iteaccesk8",
+      "menu-item#iteaccesk9",
+      "menu-item#iteaccesk10",
+      "menu-item#iteaccesk11"
+    ]
+  },"menu-item#accesktit1":{
+    "props":{
+      "type":"category",
+      "categoryId": 312,
+      "text":"Decoración",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#iteaccesk1":{
+    "props":{
+      "type":"category",
+      "categoryId": 318,
+      "text":"Portaretratos",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk2":{
+    "props":{
+      "type":"category",
+      "categoryId": 317,
+      "text":"Espejos",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk3":{
+    "props":{
+      "type":"category",
+      "categoryId": 316,
+      "text":"Cuadros",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk4":{
+    "props":{
+      "type":"category",
+      "categoryId": 314,
+      "text":"Cojines, Throws y Canastes",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk5":{
+    "props":{
+      "type":"category",
+      "categoryId": 319,
+      "text":"Macetas y Floreros",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk6":{
+    "props":{
+      "type":"category",
+      "categoryId": 315,
+      "text":"Velas y Aromáticas",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk7":{
+    "props":{
+      "type":"category",
+      "categoryId": 313,
+      "text":"Complementos decorativos",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk8":{
+    "props":{
+      "type":"category",
+      "categoryId": 271,
+      "text":"Pisos",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk9":{
+    "props":{
+      "type":"category",
+      "categoryId": 320,
+      "text":"Tapetes",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk10":{
+    "props":{
+      "type":"category",
+      "categoryId": 321,
+      "text":"Duvets y Sábanas",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk11":{
+    "props":{
+      "type":"category",
+      "categoryId": 283,
+      "text":"Móbica Kids",
+      "blockClass":"catprinmen"
+    }
+  },
+
+
+
+
+
+  "flex-layout.col#acceskcol2":{
+    "children":[
+      "menu-item#accesktit2",
+      "menu-item#iteaccesk21",
+      "menu-item#iteaccesk22",
+      "menu-item#iteaccesk23",
+      "menu-item#iteaccesk24"
+    ],"props":{
+      "verticalAlign":"top"
+    }
+  },"menu-item#accesktit2":{
+    "props":{
+      "type":"category",
+      "categoryId": 276,
+      "text":"Baño",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#iteaccesk21":{
+    "props":{
+      "type":"category",
+      "categoryId": 278,
+      "text":"Accesorios de Baños",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk22":{
+    "props":{
+      "type":"category",
+      "categoryId": 277,
+      "text":"Toallas y Tapetes",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk23":{
+    "props":{
+      "type":"category",
+      "categoryId": 279,
+      "text":"Jabones",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk24":{
+    "props":{
+      "type":"category",
+      "categoryId": 351,
+      "text":"Móbica Spa",
+      "blockClass":"catprinmen"
+    }
+  },
+
+
+  "flex-layout.col#acceskcol3":{
+    "children":[
+      "menu-item#accesktit3",
+      "menu-item#iteaccesk31",
+      "menu-item#iteaccesk32",
+      "menu-item#iteaccesk33"
+    ],"props":{
+      "verticalAlign":"top"
+    }
+  },"menu-item#accesktit3":{
+    "props":{
+      "type":"category",
+      "categoryId": 322,
+      "text":"Iluminación",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#iteaccesk31":{
+    "props":{
+      "type":"category",
+      "categoryId": 323,
+      "text":"Lámparas de Mesa",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk32":{
+    "props":{
+      "type":"category",
+      "categoryId": 324,
+      "text":"Lámparas de Piso",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk33":{
+    "props":{
+      "type":"category",
+      "categoryId": 325,
+      "text":"Lámparas de Techo",
+      "blockClass":"catprinmen"
+    }
+  },
+
+  "flex-layout.col#acceskcol4":{
+    "children":[
+      "menu-item#accesktit4",
+      "menu-item#iteaccesk41",
+      "menu-item#iteaccesk42"
+    ],"props":{
+      "verticalAlign":"top"
+    }
+  },"menu-item#accesktit4":{
+    "props":{
+      "type":"category",
+      "categoryId": 304,
+      "text":"Cocina",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#iteaccesk41":{
+    "props":{
+      "type":"category",
+      "categoryId": 305,
+      "text":"Utensilios de Cocina",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#iteaccesk42":{
+    "props":{
+      "type":"category",
+      "categoryId": 306,
+      "text":"Artículos para Servir y Limpiar",
+      "blockClass":"catprinmen"
+    }
+  },
+
+
+  "flex-layout.col#acceskcol5":{
+    "children":[
+      "menu-item#accesktit5",
+      "menu-item#iteaccesk51",
+      "menu-item#iteaccesk52",
+      "menu-item#iteaccesk53",
+      "menu-item#iteaccesk54",
+      "menu-item#iteaccesk55",
+      "menu-item#iteaccesk56",
+      "menu-item#iteaccesk57",
+      "menu-item#iteaccesk58"
+    ],"props":{
+      "verticalAlign":"top"
+    }
+  },"menu-item#accesktit5":{
+    "props":{
+      "type":"category",
+      "categoryId": 326,
+      "text":"Mesa y Bar",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#iteaccesk51":{
+    "props":{
+      "type":"category",
+      "categoryId": 327,
+      "text":"Vajillas y Cubiertos",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk52":{
+    "props":{
+      "type":"category",
+      "categoryId": 328,
+      "text":"Vasos y Copas",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk53":{
+    "props":{
+      "type":"category",
+      "categoryId": 330,
+      "text":"Jarras",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk54":{
+    "props":{
+      "type":"category",
+      "categoryId": 331,
+      "text":"Manteles y Servilletas",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk55":{
+    "props":{
+      "type":"category",
+      "categoryId": 333,
+      "text":"Botana",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk56":{
+    "props":{
+      "type":"category",
+      "categoryId": 329,
+      "text":"Bar",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk57":{
+    "props":{
+      "type":"category",
+      "categoryId": 334,
+      "text":"Café y Té",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteaccesk58":{
+    "props":{
+      "type":"category",
+      "categoryId": 332,
+      "text":"Vino y Queso",
+      "blockClass":"catprinmen"
+    }
+  },
+  "flex-layout.row#content2":{
+    "children":[
+      "menu-item#rowiteaccesk1"
+    ],"props":{
+      "paddingTop":5
+    }
+  },
+  "menu-item#rowiteaccesk1":{
+    "props":{
+      "type":"category",
+      "categoryId": 350,
+      "text":"Móbica Pets",
+      "blockClass":"titcat"
+    }
+  },
+  "flex-layout.col#imacces":{
+    "children":[
+      "image#accesoriosmen"
+    ]
+  },"image#accesoriosmen":{
+    "props":{
+      "src":"assets/sofa.jpg"
+    }
+  },
+
+  "menu-item#electrodesk": {
+    "props": {
+      "id": "menu-item-electrodesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"hmen",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Electrónicos",
+        "text": "Electrónicos"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#electrodesk"
+    ]
+  },
+  "vtex.menu@2.x:submenu#electrodesk": {
+    "props": {
+      "width":"100%",
+      "blockClass":"subcontainer"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#electrodesk-prods"
+    ]
+  },
+  "vtex.menu@2.x:menu#electrodesk-prods": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass":"blockmen"
+    },
+    "children": [
+      "flex-layout.row#electrodesk"
+    ]
+  },
+
+  "flex-layout.row#electrodesk":{
+    "children":[
+      "flex-layout.col#contentelectrodesk",
+      "flex-layout.col#imaelectrodesk"
+    ],"props":{
+      "blockClass":"rowmenprin",
+      "fullWdith":true,
+      "colSizing": "auto",
+      "colGap": 2,
+      "horizontalAlign":"center"
+    }
+  },
+  "flex-layout.col#contentelectrodesk":{
+    "children":[
+      "flex-layout.col#electrodesk"
+    ]
+  },"flex-layout.col#electrodesk":{
+    "children":[
+      "menu-item#electrodesktit1",
+      "menu-item#iteelectrodesk1",
+      "menu-item#iteelectrodesk2",
+      "menu-item#iteelectrodesk3"
+    ],"props":{
+      "verticalAlign":"top"
+    }
+  },
+  
+  "menu-item#electrodesktit1":{
+    "props":{
+      "type":"category",
+      "categoryId": 357,
+      "text":"Electrónicos",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#iteelectrodesk1":{
+    "props":{
+      "type":"category",
+      "categoryId": 358,
+      "text":"Carraduras Inteligentes",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteelectrodesk2":{
+    "props":{
+      "type":"category",
+      "categoryId": 356,
+      "text":"iRobot",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#iteelectrodesk3":{
+    "props":{
+      "type":"category",
+      "categoryId": 371,
+      "text":"Purificadores de Aire",
+      "blockClass":"catprinmen"
+    }
+  },"flex-layout.col#imaelectrodesk":{
+    "children":[
+      "image#electronicos"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
+  },"image#electronicos":{
+    "props":{
+      "src":"assets/sofa.jpg"
+    }
+  },
+
+  "menu-item#hooffdesk": {
+    "props": {
+      "id": "menu-item-hooffdesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"hmen",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Home Office",
+        "text": "Home Office"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#hooffdesk"
+    ]
+  },
+  "vtex.menu@2.x:submenu#hooffdesk": {
+    "props": {
+      "width":"100%",
+      "blockClass":"subcontainer"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#hooffdesk-prods"
+    ]
+  },
+  "vtex.menu@2.x:menu#hooffdesk-prods": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass":"blockmen"
+    },
+    "children": [
+      "flex-layout.row#hooffdesk"
+    ]
+  },
+
+  "flex-layout.row#hooffdesk":{
+    "children":[
+      "flex-layout.col#contenthooffdesk",
+      "flex-layout.col#imahooffdesk"
+    ],"props":{
+      "blockClass":"rowmenprin",
+      "fullWdith":true,
+      "colSizing": "auto",
+      "colGap": 2,
+      "horizontalAlign":"center"
+    }
+  },
+  "flex-layout.col#contenthooffdesk":{
+    "children":[
+      "flex-layout.col#ooffdesk"
+    ]
+  },"flex-layout.col#ooffdesk":{
+    "children":[
+      "menu-item#ooffdesktit1",
+      "menu-item#ooffdesk1",
+      "menu-item#ooffdesk2"
+    ],"props":{
+      "verticalAlign":"top"
+    }
+  },
+  
+  "menu-item#ooffdesktit1":{
+    "props":{
+      "type":"category",
+      "categoryId": 280,
+      "text":"Home Office",
+      "blockClass":"titcat"
+
+    }
+  },
+
+  "menu-item#ooffdesk1":{
+    "props":{
+      "type":"category",
+      "categoryId": 282,
+      "text":"Escritorios",
+      "blockClass":"catprinmen"
+    }
+  },"menu-item#ooffdesk2":{
+    "props":{
+      "type":"category",
+      "categoryId": 281,
+      "text":"Sillas de Oficina",
+      "blockClass":"catprinmen"
+    }
+  },
+
+  "flex-layout.col#imahooffdesk":{
+    "children":[
+      "image#hooffdesk"
+    ],"props":{
+      "verticalAlign": "middle"
+    }
+  },
+  "image#hooffdesk":{
+    "props":{
+      "src":"assets/sofa.jpg"
+    }
+  },
+
+
+
+
+
+
+
+
+  "menu-item#accesorios": {
+    "props": {
+      "blockClass":"topmenu",
+      "id": "menu-item-accesorios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type":"internal",
+        "href":"/Accesorios",
+        "noFollow": false,
+        "tagTitle": "ACCESORIOS",
+        "text": "ACCESORIOS"
+      }
+    }
+  },
+  "menu-item#electronicos": {
+    "props": {
+      "blockClass":"topmenu",
+      "id": "menu-item-electronicos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type":"internal",
+        "href":"/Electronicos",
+        "noFollow": false,
+        "tagTitle": "ELECTRÓNICOS",
+        "text": "ELECTRÓNICOS"
+      }
+    }
+  },
+  "menu-item#ofertas": {
+    "props": {
+      "blockClass":"topmenu",
+      "id": "menu-item-ofertas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type":"internal",
+        "href":"/Ofertas",
+        "noFollow": false,
+        "tagTitle": "OFERTAS",
+        "text": "OFERTAS"
+      }
+    }
+  },
+
+  "menu-item#entrega": {
+    "props": {
+      "blockClass":"topmenu",
+      "id": "menu-item-entrega",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "noFollow": false,
+        "type":"internal",
+        "href":"/Entrega-rapida",
+        "tagTitle": "ENTREGA RÁPIDA",
+        "text": "ENTREGA RÁPIDA"
+      }
+    }
+  },
+
+  "menu-item#homeoff": {
+    "props": {
+      "blockClass":"topmenu",
+      "id": "menu-item-homeoff",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type":"internal",
+        "href":"/Home-office",
+        "noFollow": false,
+        "tagTitle": "HOME OFFICE",
+        "text": "HOME OFFICE"
+      }
+    }
+  }
+
+
+  
+}

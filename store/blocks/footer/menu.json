@@ -1,0 +1,535 @@
+{
+  "vtex.menu@2.x:menu#ayuda": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#ayuda",
+      "menu-item#preguntas",
+      "menu-item#envios",
+      "menu-item#facturacion"
+    ]
+  },
+  "menu-item#ayuda": {
+    "props": {
+      "id": "menu-item-ayuda",
+      "type": "custom",
+      "text":"Ayuda",
+      "blockClass": "titfoo"
+    }
+  },
+  "menu-item#preguntas": {
+    "props": {
+      "blockClass": "itemfoo",
+      "id": "menu-item-preguntas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Preguntas-frecuentes",
+        "noFollow": false,
+        "tagTitle": "Preguntas Frecuentes",
+        "text": "Preguntas Frecuentes"
+      }
+    }
+  },
+  "menu-item#envios": {
+    "props": {
+      "blockClass": "itemfoo",
+      "id": "menu-item-envios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Envíos",
+        "noFollow": false,
+        "tagTitle": "Envíos",
+        "text": "Envíos"
+      }
+    }
+  },
+  "menu-item#facturacion": {
+    "props": {
+      "blockClass": "itemfoo",
+      "id": "menu-item-facturacion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Facturacion",
+        "noFollow": false,
+        "tagTitle": "Facturación",
+        "text": "Facturación"
+      }
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#servicios": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#servicios",
+      "menu-item#decoracion",
+      "menu-item#oficina"
+    ]
+  },
+  "menu-item#servicios": {
+    "props": {
+      "id": "menu-item-servicios",
+      "type": "custom",
+      "text":"Servicios",
+      "blockClass": "titfoo"
+    }
+  },
+  "menu-item#decoracion": {
+    "props": {
+      "blockClass": "itemfoo",
+      "id": "menu-item-decoracion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "Decoracion-casas",
+        "noFollow": true,
+        "tagTitle": "Decoración casas",
+        "text": "Decoración casas"
+      }
+    }
+  },
+
+  "menu-item#oficina": {
+    "props": {
+      "blockClass": "itemfoo",
+      "id": "menu-item-oficina",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Proyecto-oficina",
+        "noFollow": true,
+        "tagTitle": "Proyecto oficina",
+        "text": "Proyecto oficina"
+      }
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#estilo": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#estilo",
+      "menu-item#contemporaneo",
+      "menu-item#industrial",
+      "menu-item#chic"
+    ]
+  },
+  "menu-item#estilo": {
+    "props": {
+      "id": "menu-item-estilo",
+      "type": "custom",
+      "text":"Comprar por estilo",
+      "blockClass": "titfoo"
+    }
+  },
+  "menu-item#contemporaneo": {
+    "props": {
+      "blockClass": "itemfoo",
+      "id": "menu-item-contemp",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "Contemporaneo",
+        "noFollow": true,
+        "tagTitle": "Contemporáneo",
+        "text": "Contemporáneo"
+      }
+    }
+  },
+
+  "menu-item#industrial": {
+    "props": {
+      "blockClass": "itemfoo",
+      "id": "menu-item-industrial",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "Industrial",
+        "noFollow": true,
+        "tagTitle": "Industrial",
+        "text": "Industrial"
+      }
+    }
+  },
+
+  "menu-item#chic": {
+    "props": {
+      "blockClass": "itemfoo",
+      "id": "menu-item-chic",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "Chic",
+        "noFollow": true,
+        "tagTitle": "Chic",
+        "text": "Chic"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#comprar": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#comprar",
+      "menu-item#recamara",
+      "menu-item#sala",
+      "menu-item#comedor"
+    ]
+  },
+  "menu-item#comprar": {
+    "props": {
+      "id": "menu-item-comprar",
+      "type": "custom",
+      "text":"Comprar",
+      "blockClass": "titfoo"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#nosotrosmob",
+      "menu-item#ayudamob",
+      "menu-item#serviciosmob",
+      "menu-item#habitacionmob",
+      "menu-item#estilomob",
+      "menu-item#ofertasmob",
+      "menu-item#politicasmob",
+      "menu-item#terminosmob"
+    ]
+  },
+
+  "menu-item#nosotrosmob": {
+    "props": {
+      "blockClass":"menfoomob",
+      "id": "menu-item-nosotros",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Sobre nosotros",
+        "text": "Sobre nosotros"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#nosotros"]
+  },
+  "vtex.menu@2.x:submenu.accordion#nosotros": {
+    "children": ["vtex.menu@2.x:menu#nosotros-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#nosotros-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.row#nosfoo"      
+    ]
+  },"flex-layout.row#nosfoo":{
+    "children":[
+      "rich-text#titnosotros",
+      "rich-text#footertext"
+    ],"props":{
+      "blockClass":"nosfoo"
+    }
+  },
+
+  "menu-item#ayudamob": {
+    "props": {
+      "blockClass":"menfoomob",
+      "itemProps": {
+        "tagTitle": "Ayuda",
+        "text": "Ayuda"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#ayudamob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#ayudamob": {
+    "children": ["vtex.menu@2.x:menu#ayudamob"]
+  },
+
+  "vtex.menu@2.x:menu#ayudamob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#preguntas",
+      "menu-item#envios",
+      "menu-item#facturacion"
+    ]
+  },
+
+  "menu-item#serviciosmob": {
+    "props": {
+      "blockClass":"menfoomob",
+      "itemProps": {
+        "tagTitle": "Servicios",
+        "text": "Servicios"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#servmob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#servmob": {
+    "children": ["vtex.menu@2.x:menu#servmob"]
+  },
+
+  "vtex.menu@2.x:menu#servmob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [      
+      "menu-item#decoracion",
+      "menu-item#oficina"
+    ]
+  },
+
+  "menu-item#habitacionmob": {
+    "props": {
+      "blockClass":"menfoomob",
+      "itemProps": {
+        "tagTitle": "Comprar por habitación",
+        "text": "Comprar por habitación"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#habmob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#habmob": {
+    "children": ["vtex.menu@2.x:menu#habmob"]
+  },
+
+  "vtex.menu@2.x:menu#habmob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [      
+      "menu-item#recamara",
+      "menu-item#sala",
+      "menu-item#comedor"
+    ]
+  },
+
+  "menu-item#estilomob": {
+    "props": {
+      "blockClass":"menfoomob",
+      "itemProps": {
+        "tagTitle": "Comprar por estilo",
+        "text": "Comprar por estilo"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#estilomob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#estilomob": {
+    "children": ["vtex.menu@2.x:menu#estilomob"]
+  },
+
+  "vtex.menu@2.x:menu#estilomob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [      
+      "menu-item#contemporaneo",
+      "menu-item#industrial",
+      "menu-item#chic"
+    ]
+  },
+
+  "menu-item#ofertasmob": {
+    "props": {
+      "blockClass":"menfoomob",
+      "itemProps": {
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#ofertasmob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#ofertasmob": {
+    "children": ["vtex.menu@2.x:menu#ofertasmob"]
+  },
+
+  "vtex.menu@2.x:menu#ofertasmob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [ 
+    ]
+  },
+
+
+  "menu-item#politicasmob": {
+    "props": {
+      "blockClass":"menfoomob",
+      "itemProps": {
+        "tagTitle": "Políticas de privacidad",
+        "text": "Políticas ade privacidad"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#politiciasmob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#politiciasmob": {
+    "children": ["vtex.menu@2.x:menu#politiciasmob"]
+  },
+
+  "vtex.menu@2.x:menu#politiciasmob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [ 
+    ]
+  },
+
+  "menu-item#terminosmob": {
+    "props": {
+      "blockClass":"menfoomob",
+      "itemProps": {
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#terminosmob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#terminosmob": {
+    "children": ["vtex.menu@2.x:menu#terminosmob"]
+  },
+
+  "vtex.menu@2.x:menu#terminosmob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [ 
+    ]
+  },
+
+
+
+  "menu-item#recamara": {
+    "props": {
+      "blockClass": "itemfoo",
+      "id": "menu-item-recamara",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Recamara",
+        "noFollow": true,
+        "tagTitle": "Recámara",
+        "text": "Recámara"
+      }
+    }
+  },
+
+  "menu-item#sala": {
+    "props": {
+      "blockClass": "itemfoo",
+      "id": "menu-item-sala",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Sala",
+        "noFollow": false,
+        "tagTitle": "Sala",
+        "text": "Sala"
+      }
+    }
+  },
+
+  "menu-item#comedor": {
+    "props": {
+      "blockClass": "itemfoo",
+      "id": "menu-item-comedor",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Comedor",
+        "noFollow": false,
+        "tagTitle": "Comedor",
+        "text": "Comedor"
+      }
+    }
+  },
+
+  "menu-item#ofertass": {
+    "props": {
+      "blockClass":"titfoo2",
+      "id": "menu-item-ofertas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Ofertas",
+        "noFollow": true,
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
+      }
+    }
+  },
+  "menu-item#politicas": {
+    "props": {
+      "blockClass":"titfoo2",
+      "id": "menu-item-politicas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Politicas-de-devolucion",
+        "noFollow": true,
+        "tagTitle": "Políticas de devolución",
+        "text": "Políticas de devolución"
+      }
+    }
+  },
+
+  "menu-item#terminos": {
+    "props": {
+      "blockClass":"titfoo2",
+      "id": "menu-item-terminos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Terminos-y-condiciones",
+        "noFollow": true,
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Novecento-Normal';
+    src: url(assets/fonts/Novecentowide-Normal.ttf);
+}
+
+@font-face {
+  font-family: 'Novecento-Bold';
+  src: url(assets/fonts/Novecentowide-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Novecento-Book';
+  src: url(assets/fonts/Novecentowide-Book.ttf);
+}
+
+@font-face {
+  font-family: 'Novecento-DemiBold';
+  src: url(assets/fonts/Novecentowide-DemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Novecento-Light';
+  src: url(assets/fonts/Novecentowide-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Novecento-Medium';
+  src: url(assets/fonts/Novecentowide-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(assets/fonts/fontawesome-webfont.woff);
+}
+
+@font-face {
+  font-family: 'Cocomat';
+  src: url(assets/fonts/CocomatLigh.ttf);
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url(assets/fonts/CenturyGothic.ttf);
+}
+
+
+
+

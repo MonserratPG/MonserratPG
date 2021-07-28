@@ -1,0 +1,1008 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.phone"
+            
+    ]
+  },
+  
+  
+  
+  
+  
+  
+  
+  /* -------------------------------- Inicio Phone ----------------------------------*/
+  "responsive-layout.phone":{
+    "children":[
+      "list-context.image-list#demo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#deals-mobile",
+      "flex-layout.row#shelftitle",
+      "tab-layout#selector",      
+      "flex-layout.row#colection",
+      "flex-layout.row#titnovedades",
+      "flex-layout.row#shelfmobnov1",
+      "flex-layout.row#titinsta",
+      "flex-layout.row#continsta",
+      "flex-layout.row#titnovedades",
+      "flex-layout.row#shelfmobnov2",
+      "flex-layout.row#ideas",
+      "flex-layout.row#sldideas",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+
+
+  "flex-layout.row#deals-mobile":{
+    "children":[
+      "flex-layout.col#deals1mob",
+      "flex-layout.col#deals2mob",
+      "flex-layout.col#deals3mob"     
+    ],"props":{
+      "blockClass":"rowdealsmob",
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#deals1mob":{
+    "children":[
+      "image#deal1",
+      "rich-text#deal1"
+    ],"props":{
+      "blockClass":"coldealsmob",
+      "horizontalAlign":"center"
+    }
+  },
+  "flex-layout.col#deals2mob":{
+    "children":[
+      "image#deal2",
+      "rich-text#deal2"
+    ],"props":{
+      "blockClass":"coldealsmob",
+      "horizontalAlign":"center"
+    }
+  },
+  "flex-layout.col#deals3mob":{
+    "children":[
+      "image#deal3",
+      "rich-text#deal3"
+    ],"props":{
+      "blockClass":"coldealsmob",
+      "horizontalAlign":"center"
+    }
+  },
+
+  "flex-layout.row#shelfmobnov1":{
+    "children":[
+      "list-context.product-list#shlefmobnov1"
+    ]
+  },
+
+  "list-context.product-list#shlefmobnov1": {
+    "blocks": ["product-summary.shelf#mob"],
+    "children": ["slider-layout#shelf-productsmobnov1"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelf-productsmobnov1": {
+    "props": {
+      "showNavigationArrows":"never",      
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf" 
+    }
+  },
+
+  "flex-layout.row#shelfmobnov2":{
+    "children":[
+      "list-context.product-list#shlefmobnov2"
+    ]
+  },
+
+  "list-context.product-list#shlefmobnov2": {
+    "blocks": ["product-summary.shelf#mob"],
+    "children": ["slider-layout#shelf-productsmobnov2"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelf-productsmobnov2": {
+    "props": {
+      "showNavigationArrows":"never",      
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf" 
+    }
+  },
+
+
+  
+
+  /* -------------------------------- Final Phone ----------------------------------*/
+  
+  /* -------------------------------- Inicio Tablet ----------------------------------*/
+  "responsive-layout.tablet":{
+    "children":[
+      "list-context.image-list#demo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#deals-mobile",
+      "flex-layout.row#shelftitle",
+      "tab-layout#selector",     
+      "flex-layout.row#colection-tab",
+      "flex-layout.row#contentcolectiontab",
+      "flex-layout.row#titnovedades",
+      "flex-layout.row#shelf",
+      "flex-layout.row#titinsta",
+      "flex-layout.row#continsta-tab",
+      "flex-layout.row#titnovedades",
+      "flex-layout.row#shelf",
+      "flex-layout.row#ideas",
+      "flex-layout.row#sldideas",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  }, 
+
+  "flex-layout.row#continsta-tab":{
+    "children":[
+      "flex-layout.col#instatabltxt",
+      "flex-layout.col#instasldtab"
+    ]
+  },
+
+  "flex-layout.col#instatabltxt":{
+    "children":[
+      "flex-layout.row#txtinsta",
+      "flex-layout.row#linkinsta"
+    ]
+  },"flex-layout.col#instasldtab":{
+    "children":[
+      "slider-layout#sldinsta"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },
+
+  
+  "flex-layout.row#colection-tab":{
+    "children":[
+      "flex-layout.col#imgcolection"
+    ]
+  },
+  "flex-layout.row#contentcolectiontab":{
+    "children":[
+      "flex-layout.col#infocolection"
+    ]
+  },
+  /* -------------------------------- Final Tablet ----------------------------------*/
+  /* -------------------------------- Inicio Desktop ----------------------------------*/
+  "responsive-layout.desktop":{
+    "children":[
+      "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#deals",
+      "flex-layout.row#shelftitle",
+      "tab-layout#selector",
+      "flex-layout.row#colection",
+      "flex-layout.row#titnovedades",
+      "flex-layout.row#shelf",
+      "flex-layout.row#titinsta",
+      "flex-layout.row#continsta",
+      "flex-layout.row#titnovedades",
+      "flex-layout.row#shelf",
+      "flex-layout.row#ideas",
+      "flex-layout.row#sldideas",
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
+    ]
+  },
+
+  "flex-layout.row#shelftitle":{
+    "children":[
+      "rich-text#shelf-title"
+    ],"props":{
+      "blockClass":"titablay",
+      "fullWidth":true
+    }
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "assets/slider1.png",
+          "mobileImage": "assets/sldhomeprin.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## COMPRAR POR",
+      "blockClass": "titablayout"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": [
+      "list-context.product-list#demo1"
+    ],"props":{
+      "fullWidth":true,
+      "blockClass":"rowshelf"
+    }
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "showNavigationArrows":"never",      
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf" 
+    }
+  },
+
+  
+
+ 
+
+  "tab-layout#selector": {
+    "children": [
+      "tab-list#select",
+      "tab-content#selector"
+    ],
+    "props": {
+      "blockClass": "tab-selector",
+      "defaultActiveTabId": "selector1"
+    }
+  },
+  "tab-list#select": {
+    "children": [
+      "tab-list.item#selector1",
+      "tab-list.item#selector2",
+      "tab-list.item#selector3"
+    ]
+  },
+  "tab-list.item#selector1": {
+    "props": {
+      "tabId": "selector1",
+      "label": "Producto",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#selector2": {
+    "props": {
+      "tabId": "selector2",
+      "label": "Estancia"
+    }
+  },
+  "tab-list.item#selector3": {
+    "props": {
+      "tabId": "selector3",
+      "label": "Estilo"
+    }
+  },
+ "tab-content#selector": {
+   "children": [
+     "tab-content.item#items1",
+     "tab-content.item#items2",
+     "tab-content.item#items3"
+   ]
+ },
+ "tab-content.item#items1": {
+   "children": [
+     "flex-layout.row#sldcats"
+   ],
+   "props": {
+     "tabId": "selector1"
+   }
+ },
+
+
+/* ----------------- Inicio Contenido Selector 1 ---------------------------------- */
+"flex-layout.row#sldcats":{
+  "children":[
+    "slider-layout#contselect1"
+  ],"props":{
+    "fullWidth":true,
+    "blockClass":"contslider"
+  }
+},
+
+"slider-layout#contselect1": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 4,
+      "tablet": 2 ,
+      "phone": 1
+    },
+    "infinite": true,
+    "showNavigationArrows": "desktopOnly",
+    "blockClass": "carouselcats"
+  },
+  "children": [
+    "flex-layout.row#salas", 
+    "flex-layout.row#camas",
+    "flex-layout.row#comedor",
+    "flex-layout.row#comedor1"
+  ]
+},
+
+"flex-layout.row#salas":{
+  "children":[
+    "flex-layout.col#salas"
+  ],"props":{
+    "horizontalAlign":"center"
+  }
+},
+"flex-layout.col#salas":{
+  "children":[
+    "rich-text#titsalas",
+    "image#salas"
+  ],"props":{    
+    "horizontalAlign": "center"
+  }
+},"rich-text#titsalas":{
+  "props":{
+    "height":126,
+    "text": "SALAS",
+    "blockClass":"titsldcats"
+  }
+},"image#salas":{
+  "props":{
+    "src":"assets/salas.png",
+    "link": "/",
+    "blockClass":"imagenslidcats"
+  }
+},
+"flex-layout.row#camas":{
+  "children":[
+    "flex-layout.col#camas"
+  ]
+},
+"flex-layout.col#camas":{
+  "children":[
+    "rich-text#titcamas",
+    "image#camas"
+  ],"props":{    
+    "horizontalAlign": "center"
+  }
+},"rich-text#titcamas":{
+  "props":{
+    "text": "CAMAS",
+    "blockClass":"titsldcats"
+  }
+},"image#camas":{
+  "props":{
+    "height":126,
+    "src":"assets/camas.png",
+    "link": "/",
+    "blockClass":"imagenslidcats"
+  }
+},"flex-layout.row#comedor":{
+  "children":[
+    "flex-layout.col#comedor"
+  ]
+},
+"flex-layout.col#comedor":{
+  "children":[
+    "rich-text#titcom",
+    "image#com"
+  ],"props":{    
+    "horizontalAlign": "center"
+  }
+},"rich-text#titcom":{
+  "props":{
+    "text": "COMEDOR",
+    "blockClass":"titsldcats"
+  }
+},"image#com":{
+  "props":{
+    "height":126,
+    "src":"assets/comedor.png",
+    "link": "/",
+    "blockClass":"imagenslidcats"
+  }
+},
+
+"flex-layout.row#comedor1":{
+  "children":[
+    "flex-layout.col#comedor1"
+  ]
+},
+"flex-layout.col#comedor1":{
+  "children":[
+    "rich-text#titcom1",
+    "image#com1"
+  ],"props":{    
+    "horizontalAlign": "center"
+  }
+},"rich-text#titcom1":{
+  "props":{
+    "text": "COMEDOR",
+    "blockClass":"titsldcats"
+  }
+},"image#com1":{
+  "props":{
+    "height":126,
+    "src":"assets/comedor.png",
+    "link": "/",
+    "blockClass":"imagenslidcats"
+  }
+},
+
+
+/* ----------------- Fin Contenido Selector 1 ---------------------------------- */
+
+
+
+
+
+ "tab-content.item#items2": {
+   "children": [
+    "flex-layout.row#sldcats"
+   ],
+   "props": {
+     "tabId": "selector2"
+   }
+ },
+
+
+ /* ----------------- Inicio Contenido Selector 2 ---------------------------------- */
+
+
+"slider-layout#contselect2": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 4,
+      "tablet": 2,
+      "phone": 1
+    },
+    "infinite": true,
+    "showNavigationArrows": "desktopOnly",
+    "blockClass": "carousel"
+  },
+  "children": []
+},
+
+/* ----------------- Fin Contenido Selector 2 ---------------------------------- */
+
+
+ "tab-content.item#items3": {
+  "children": [
+    "flex-layout.row#sldcats"
+  ],
+  "props": {
+    "tabId": "selector3"
+  }
+},
+
+/* ----------------- Inicio Contenido Selector 3 ---------------------------------- */
+
+
+"slider-layout#contselect3": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 4,
+      "tablet": 2,
+      "phone": 1
+    },
+    "infinite": true,
+    "showNavigationArrows": "desktopOnly",
+    "blockClass": "carousel"
+  },
+  "children": []
+},
+
+/* ----------------- Fin Contenido Selector 3 ---------------------------------- */
+
+
+
+
+"flex-layout.row#colection":{
+  "children":[
+    "flex-layout.col#imgcolection",
+    "flex-layout.col#infocolection"
+  ],"props":{
+    "fullWidth":true,
+    "blockClass": "rowColection"
+  }
+},"flex-layout.col#imgcolection":{
+  "children":[
+    "image#colection"
+  ],"props":{
+    "horizontalAlign":"left",
+    "blockClass":"colcolection",
+    "verticalAlign": "middle"
+  }
+},"image#colection":{
+  "props":{
+    "height": 470,
+    "src":"assets/prinnora.png"
+  }
+},"flex-layout.col#infocolection":{
+  "children":[
+    "flex-layout.row#titinfo",
+    "flex-layout.row#txtinfo",
+    "flex-layout.row#titccolection"//,
+    //"flex-layout.row#sldcolection"
+  ],"props":{
+    "blockClass":"colcolection",
+    "verticalAlign":"middle"
+  }
+},"flex-layout.row#titinfo":{
+  "children":[
+    "rich-text#titinfo"
+  ]
+},
+"rich-text#titinfo":{
+    "props":{
+      "text":"## COLECCIÓN NORA",
+      "blockClass":"titprincolection"      
+    }
+},
+"flex-layout.row#txtinfo":{
+  "children":[
+    "rich-text#txtinfo"
+  ]
+},
+"rich-text#txtinfo":{
+  "props":{
+    "text":"DISEÑO QUE JAMÁS PASA DE MODA. NORA ES UNA MESA DE COMEDOR DE ESTILO CINTEMPORÁNEO CLÁSICO. FABRICADA EN MADERA DE ROBLECON ACABADO ENTINTADO, ES IDEAL PARA COMPLEMENTAR LA DECORACIÓN DE TU COIMEDOR.",
+    "blockClass":"txtinfocolection"
+  }
+},
+"flex-layout.row#titccolection":{
+  "children":[
+    "rich-text#titccol"
+  ]
+},
+"rich-text#titccol":{
+  "props":{
+    "text":"#### COMPRAR LA COLECCIÓN",
+    "blockClass":"subtitcolection"
+  }
+},"flex-layout.row#sldcolection":{
+  "children":[
+    "list-context.image-list#sldcol"
+  ]
+},
+
+"list-context.image-list#sldcol": {
+  "children": ["slider-layout#sldimagescollection"],
+  "props": {
+    "height": 175,
+    "images": [
+      {
+        "image": "assets/nora1.png",
+        "mobileImage": "assets/nora1.png",
+        "link":"/"
+      },
+      {
+        "image": "assets/nora2.png",
+        "mobileImage": "assets/nora2.png",
+        "link":"/"
+      },
+      {
+        "image": "assets/nora3.png",
+        "mobileImage": "assets/nora2.png",
+        "link":"/"
+      },
+      {
+        "image": "assets/nora4.png",
+        "mobileImage": "assets/nora4.png",
+        "link":"/"
+      }
+    ]
+  }
+},
+"slider-layout#sldimagescollection": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 4,
+      "tablet": 3,
+      "phone": 2
+    },
+    "infinite": true,
+    "showNavigationArrows": "desktopOnly",
+    "blockClass": "sldcolection"
+  }
+},
+
+
+
+"flex-layout.row#titnovedades":{
+  "children":[
+    "rich-text#titnov"
+  ],"props":{
+    "fullWidth": true,
+    "blockClass":"rownovedades"
+  }
+},"rich-text#titnov":{
+  "props":{
+    "text":"## Novedades",
+    "fullWidth":true,
+    "blockClass": "titnovedades"
+  }
+},
+
+"flex-layout.row#titinsta":{
+  "children":[
+    "rich-text#titinsta"
+  ],"props":{
+    "fullWidth":false,
+    "blockClass":"instatitprin"
+  }
+},
+"rich-text#titinsta":{
+  "props":{
+    "text":"## INSTA SHOPPING"
+  }
+},
+"flex-layout.row#continsta":{
+  "children":[
+    "flex-layout.col#contxt",
+    "flex-layout.col#sldinsta"
+  ],"props":{
+    "fullWidth":false,
+    "blockClass":"rowinsta"
+  }
+},"flex-layout.col#contxt":{
+  "children":[
+    "flex-layout.row#txtinsta",
+    "flex-layout.row#linkinsta"
+  ],"props":{
+    "width": "30%"
+  }
+},"flex-layout.row#txtinsta":{
+  "children":[
+    "rich-text#txtinsta"
+  ],"props":{
+    "fullWidth":true,
+    "blockClass":"rowtxtinsta"
+  }
+},"rich-text#txtinsta":{  
+  "props":{
+    "text":"¿TIENES UN LGAR ENVIDIABLE? COMPÁRTELO MENCIONANDO A @MOBICAMX EN TUS FOTOS Y PODRÁN SER SELECCIONADAS PARA APARECER EN NUESTRO SITIO.",
+    "blockClass":"txtinsta"
+  }
+},"flex-layout.row#linkinsta":{
+  "children":[
+    "rich-text#linkista"
+  ],"props":{
+    "blockClass":"linktxt"
+  }
+}, "rich-text#linkista":{
+  "props":{
+    "text":"[VISITA NUESTRO INSTAGRAM](https://instagram.com/mobicamx)",
+    "blockClass":"linktext"
+  }
+},
+
+"flex-layout.col#sldinsta":{
+  "children":[
+    "slider-layout#sldinsta"
+  ],"props":{
+    "width":"70%"
+  }
+},
+
+"slider-layout#sldinsta": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 3,
+      "tablet": 1 ,
+      "phone": 1
+    },
+    "infinite": true,
+    "showNavigationArrows": "desktopOnly",
+    "blockClass": "sldinsta"
+  },
+  "children": [
+    "flex-layout.col#insta1", 
+    "flex-layout.col#insta2",
+    "flex-layout.col#insta3"
+  ]
+},
+
+"flex-layout.col#insta1":{
+  "children":[
+    "image#insta1",
+    "rich-text#txtinsta1"
+  ]  
+},"image#insta1":{
+  "props":{
+    "height": 302,
+    "src":"assets/insta1.png"
+  }
+},
+"rich-text#txtinsta1":{
+  "props":{
+    "text":"[@KAREN_PL](https://instagram.com/karen_pl)",
+    "blockClass":"textlinkig"
+  }
+},
+"flex-layout.col#insta2":{
+  "children":[
+    "image#insta2",
+    "rich-text#txtinsta2"
+  ]  
+},"image#insta2":{
+  "props":{
+    "height": 302,
+    "src":"assets/insta2.png"
+  }
+},
+"rich-text#txtinsta2":{
+  "props":{
+    "text":"[@KAREN_PL](https://instagram.com/karen_pl)",
+    "blockClass":"textlinkig"
+  }
+},
+"flex-layout.col#insta3":{
+  "children":[
+    "image#insta3",
+    "rich-text#txtinsta3"
+  ]  
+},"image#insta3":{
+  "props":{
+    "height": 302,
+    "src":"assets/insta3.png"
+  }
+},
+"rich-text#txtinsta3":{
+  "props":{
+    "text":"[@KAREN_PL](https://instagram.com/karen_pl)",
+    "blockClass":"textlinkig"
+  }
+},
+
+
+
+
+"flex-layout.row#ideas":{
+  "children":[
+    "rich-text#ideas"
+  ],"props":{
+    "fullWidth":true,
+    "blockClass":"rowideas"
+  }
+},"rich-text#ideas":{
+  "props":{
+    "text":"## NUEVAS IDEAS PARA <br> TRANSFORMAR TU HOGAR"
+  }
+},
+
+"flex-layout.row#sldideas":{
+  "children":[
+    "slider-layout#sldideas"
+  ],"props":{
+    "horizontalAlignment":"center",
+    "fullWidth":true,
+    "blockClass":"rowideas"
+  }
+},
+"slider-layout#sldideas": {
+  "props": {
+    "fullWidth":true,
+    "itemsPerPage": {
+      "desktop": 5,
+      "tablet": 2 ,
+      "phone": 1
+    },
+    "infinite": true,
+    "showNavigationArrows": "desktopOnly",
+    "blockClass": "sldinsta"
+  },
+  "children": [
+    "flex-layout.col#ideas1", 
+    "flex-layout.col#ideas2",
+    "flex-layout.col#ideas3",
+    "flex-layout.col#ideas4",
+    "flex-layout.col#ideas4"
+  ]
+},
+"flex-layout.col#ideas1":{
+  "children":[
+    "image#col1",
+    "rich-text#desc1"
+  ]
+},
+
+"image#col1":{
+  "props":{
+    "src":"assets/transformar.png"
+  }
+},"rich-text#desc1":{
+  "props":{
+    "text": "LOS COLORES PARA TU HOGAR <br> EN EL 2021",
+    "blockClass":"txtideas"
+  }
+},
+"flex-layout.col#ideas2":{
+  "children":[
+    "image#col2",
+    "rich-text#desc2"
+  ]
+},"image#col2":{
+  "props":{
+    "src":"assets/transformar.png"
+  }
+},"rich-text#desc2":{
+  "props":{
+    "text": "LOS COLORES PARA TU HOGAR <br> EN EL 2021",
+    "blockClass":"txtideas"
+  }
+},
+"flex-layout.col#ideas3":{
+  "children":[
+    "image#col3",
+    "rich-text#desc3"
+  ]
+},"image#col3":{
+  "props":{
+    "src":"assets/transformar.png"
+  }
+},"rich-text#desc3":{
+  "props":{
+    "text": "LOS COLORES PARA TU HOGAR <br> EN EL 2021",
+    "blockClass":"txtideas"
+  }
+},
+
+"flex-layout.col#ideas4":{
+  "children":[
+    "image#col4",
+    "rich-text#desc4"
+  ]
+},"image#col4":{
+  "props":{
+    "src":"assets/transformar.png"
+  }
+},"rich-text#desc4":{
+  "props":{
+    "text": "LOS COLORES PARA <br> TU HOGAR EN EL 2021",
+    "blockClass":"txtideas"
+  }
+},
+
+"flex-layout.row#newsletter":{
+  "children":[
+    "flex-layout.col#textnews",
+    "flex-layout.col#contentnews"
+  ],"props":{
+    "fullWidth":true,
+    "horizontalAlign":"center",
+    "blockClass":"rowfullnews"
+  }
+},
+"flex-layout.col#textnews":{
+  "children":[
+    "rich-text#txtnews"
+  ],"props":{
+    "horizontalAlign":"center",
+    "verticalAlign":"middle",
+    "width":"40%"
+  }
+}, "rich-text#txtnews":{
+  "props":{
+    "text":"### SUSCRÍBETE A NUESTRA <br> NEWSLETTER Y CONSIGUE <br> 5% DE DESCUENTO",
+    "blockClass":"txtnews",
+    "textAlignment": "LEFT"
+  }
+},"flex-layout.col#contentnews":{
+  "children":[
+    "newsletter-form#desk"
+  ],"props":{
+    "verticalAlign":"middle",
+    "width":"60%"
+  }    
+},
+"newsletter-form#desk":{
+  "children":[
+    "flex-layout.row#newscontent",
+    "flex-layout.row#subtextnews"
+  ]
+},
+"flex-layout.row#newscontent":{
+  "children":[
+    "flex-layout.col#input",
+    "flex-layout.col#sumbit"
+  ],"props":{
+    "blockClass":"newscontent"
+ }
+},
+"flex-layout.col#input":{
+  "children":[
+    "newsletter-input-email"
+  ],"props":{
+    "width":"70%"
+  }
+},
+"flex-layout.col#sumbit":{
+  "children":[
+    "newsletter-submit"
+  ],"props":{
+    "width":"30%",
+    "blockClass":"colsubmit"
+  }
+},
+
+
+"flex-layout.row#subtextnews":{
+  "children":[
+    "rich-text#subtextnews"
+  ],"props":{
+    "horizontalAlign":"center"
+  }
+}, "rich-text#subtextnews":{
+  "props":{
+    "text":"TE REGALAMOS EL 5% DE DESCUENT EN TU SIGUIENTE COMPRA SUPERIOR A $2,000.00 MNX. <br> AL SUSCRIBIRSE  ACEPTAS NUESTROS TÉRMINOS Y CONDICIONES  ASÍ COMO NUESTRAS POLÍTICAS DE COOKIES",
+    "blockClass":"subtextnews"
+  }
+},
+
+
+
+
+"newsletter-input-email":{
+  "props":{
+    "placeholderText":"DIRECCIÓN DE CORREO ELECTRÓNICO"
+  }
+},
+"newsletter-submit":{
+  "props":{
+    "submitButtonLabel":"SUSCRIBIRSE",
+    "blockClass":"suscribtn"
+  }
+},
+
+"back-to-top-button":{
+  "props":{
+    "display":"caret-icon"
+  }
+}
+    
+
+
+}

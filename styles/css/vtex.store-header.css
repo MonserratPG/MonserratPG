@@ -1,0 +1,452 @@
+/* add transitions */
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-store-components-3-x-logoLink),
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-minicart-2-x-openIconContainer),
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-store-components-3-x-searchBarContainer) {
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* desktop/mobile main header padding and background transitions */
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  transition: background 0.3s ease;
+  will-change: padding, background;
+}
+
+/* main header desktop has a bigger padding when not stuck */
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* add a box-shadow to desktop/mobile header when stuck */
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*
+ * remove the extra padding when stuck from the desktop header
+ * we add a transition only when "stuck" for the "unstick" step seem faster
+ */
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+  transition: padding 0.3s ease, background 0.3s ease;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* if supported add some translucency to the desktop/mobile header background */
+@supports (backdrop-filter: blur(5px)) {
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    backdrop-filter: blur(8px);
+  }
+
+  /* header background when stuck and not hovered */
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    background: #ffffff;
+  }
+}
+
+/* stick wrapper with the same color as the desktop/mobile header */
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
+  background-color: #ffffff;
+}
+
+/* resize the logo for neat effect */
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-store-components-3-x-logoLink) {
+  transform: scale(0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-store-components-3-x-logoLink),
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-minicart-2-x-openIconContainer),
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-store-components-3-x-searchBarContainer),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+    transition: none;
+  }
+}
+
+
+:global(.vtex-rich-text-0-x-wrapper--txtubicaciones)
+  :global(.vtex-rich-text-0-x-paragraph)::before{
+    content: url(assets/marker.png);
+    position: relative;
+    top: 5px;
+}
+
+:global(.vtex-login-2-x-accessCodeOptionBtn)
+  :global(.vtex-button):hover,
+:global(.vtex-login-2-x-emailPasswordOptionBtn)
+  :global(.vtex-button):hover,
+:global(.vtex-login-2-x-googleOptionBtn)
+  :global(.vtex-button):hover,
+:global(.vtex-login-2-x-facebookOptionBtn)
+  :global(.vtex-button):hover{
+    background-color: #505F4A;
+}
+
+:global(.vtex-login-2-x-accessCodeOptionBtn)
+  :global(.vtex-button),
+:global(.vtex-login-2-x-emailPasswordOptionBtn)
+  :global(.vtex-button),
+:global(.vtex-login-2-x-googleOptionBtn)
+  :global(.vtex-button),
+:global(.vtex-login-2-x-facebookOptionBtn)
+  :global(.vtex-button){
+    border-radius: 0%;
+}
+
+:global(.vtex-login-2-x-accessCodeOptionBtn)
+  :global(.vtex-button),
+:global(.vtex-login-2-x-emailPasswordOptionBtn)
+  :global(.vtex-button){
+    border: 1px solid #000000;
+    border-width: thin;
+}
+
+:global(.vtex-login-2-x-googleOptionBtn)
+  :global(.vtex-button)
+    :global(.vtex-button__label):hover,
+:global(.vtex-login-2-x-facebookOptionBtn)
+  :global(.vtex-button)
+    :global(.vtex-button__label):hover{
+      color: #ffffff;
+}
+
+:global(.vtex-login-2-x-googleOptionBtn)
+  :global(.vtex-button)
+    :global(.vtex-button__label),
+:global(.vtex-login-2-x-facebookOptionBtn)
+  :global(.vtex-button)
+    :global(.vtex-button__label){
+      color: #0f3e99;
+}
+
+:global(.vtex-login-2-x-profileIcon){
+  color: #000000;
+  width: 20px;
+  height: 20px;
+}
+
+:global(.vtex-minicart-2-x-cartIcon){
+ display: none;
+}
+
+
+
+:global(.vtex-minicart-2-x-openIconContainer)
+  :global(.vtex-button)
+    :global(.vtex-button__label)::before{
+      content: url(assets/bag17px.png);
+      width: 15px;
+}
+
+:global(.vtex-minicart-2-x-openIconContainer)
+  :global(.vtex-button){
+  padding-bottom: 5px;
+}
+
+
+  :global(.vtex-store-components-3-x-imageElementLink--icowishlist){
+    padding-top: 20px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--menu-link){
+    padding-bottom: 20px;
+    border-bottom: 4px solid #EEEEE4;
+  }
+
+  :global(.vtex-store-components-3-x-autoCompleteOuterContainer--stylesrch){
+    border: #F6F6F4;
+  }
+
+  :global(.vtex-store-components-3-x-autoCompleteOuterContainer--stylesrch)
+    :global(.vtex-input)
+      :global(.vtex-input-prefix__group)
+        :global(.vtex-styleguide-9-x-input),
+  :global(.vtex-store-components-3-x-autoCompleteOuterContainer--stylesrch)
+    :global(.vtex-input)
+      :global(.vtex-input-prefix__group)
+        :global(.vtex-input__suffix){
+            background: #F6F6F4;
+  }
+  :global(.vtex-store-components-3-x-autoCompleteOuterContainer--stylesrch)
+    :global(.vtex-input)
+      :global(.vtex-input-prefix__group){
+        border-color: #F6F6F4 !important; 
+      }
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowitemen){
+  border-bottom: 1px solid #E5E5E1;
+}
+
+:global(.vtex-store-components-3-x-autoCompleteOuterContainer--stylesrch)
+:global(.vtex-input)
+  :global(.vtex-input-prefix__group)
+    :global(.vtex-styleguide-9-x-input){
+      color: #000000;
+}
+
+
+:global(.vtex-menu-2-x-styledLinkContent--topmenu),
+:global(.vtex-rich-text-0-x-paragraph--txtubicaciones){
+  font-size: 14px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
+  :global(.vtex-minicart-2-x-minicartWrapperContainer)
+    :global(.vtex-minicart-2-x-minicartContainer)
+      :global(.vtex-minicart-2-x-openIconContainer)
+        :global(.vtex-button)
+          :global(.vtex-button__label){
+            padding-left: 0%;
+            padding-right: 0%;
+}
+
+
+
+
+:global(.vtex-store-drawer-0-x-openIconContainer--drawersala)::after{
+  content: "SALA";
+  font-size: 14px;
+  right: 20px;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--drawerecamara)::after{
+  content: "RECAMARA";
+  font-size: 14px;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--drawercomedor)::after{
+  content: "COMEDOR";
+  font-size: 14px;
+}
+
+
+:global(.vtex-store-drawer-0-x-openIconContainer--draweroficina)::after{
+  content: "OFICINA";
+  font-size: 14px;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--drawerjardin)::after{
+  content: "JARDIN";
+  font-size: 14px;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--drawerdecora)::after{
+  content: "DECORACIÓN";
+  font-size: 14px;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--drawerilumina)::after{
+  content: "ILUMINACIÓN";
+  font-size: 14px;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--drawermesabar)::after{
+  content: "MESA BAR";
+  font-size: 14px;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--drawercocina)::after{
+  content: "COCINA";
+  font-size: 14px;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--drawerbano)::after{
+  content: "BAÑO";
+  font-size: 14px;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--drawerelectro)::after{
+  content: "ELECTRÓNICOS";
+  font-size: 14px;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--drawernovedades)::after{
+  content: "NOVEDADES";
+  font-size: 14px;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer--drawerofertas)::after{
+  content: "OFERTAS";
+  font-size: 14px;
+}
+
+:global(.vtex-store-drawer-0-x-menuIcon--drawersala),
+:global(.vtex-store-drawer-0-x-menuIcon--drawerecamara),
+:global(.vtex-store-drawer-0-x-menuIcon--drawercomedor),
+:global(.vtex-store-drawer-0-x-menuIcon--draweroficina),
+:global(.vtex-store-drawer-0-x-menuIcon--drawerjardin),
+:global(.vtex-store-drawer-0-x-menuIcon--drawerdecora),
+:global(.vtex-store-drawer-0-x-menuIcon--drawerilumina),
+:global(.vtex-store-drawer-0-x-menuIcon--drawermesabar),
+:global(.vtex-store-drawer-0-x-menuIcon--drawercocina),
+:global(.vtex-store-drawer-0-x-menuIcon--drawerbano),
+:global(.vtex-store-drawer-0-x-menuIcon--drawerelectro),
+:global(.vtex-store-drawer-0-x-menuIcon--drawernovedades),
+:global(.vtex-store-drawer-0-x-menuIcon--drawerofertas){
+ display:none;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexColChild--imgmen){
+  padding-left: 15px;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav){
+  width: 100%;
+}
+
+:global(.vtex-store-drawer-0-x-closeIconContainer--principal){
+  background-color: #505F4A;
+}
+:global(.vtex-store-drawer-0-x-closeIconContainer--principal)
+:global(.vtex-store-drawer-0-x-closeIcon){
+  color:#ffffff;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--titmendrawer){
+  padding-left: 15px;
+}
+
+
+:global(.vtex-rich-text-0-x-link--itemtit){
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--itemtit){
+  padding-left: 5px;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowitemenlog){
+  padding-top: 50px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowitemenayuda){
+  padding-bottom: 50px;
+}
+
+:global(.vtex-login-2-x-formTitle){
+  font-size: 14px;
+}
+
+
+:global(.vtex-login-2-x-sendButton)
+  :global(.vtex-button){
+      border-radius: 0%;
+}
+
+:global(.vtex-styleguide-9-x-input)::placeholder{
+  font-size: 14px;
+  font-family: 'Century Gothic';
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+}
+
+
+:global(.vtex-login-2-x-buttonSocial)
+  :global(.vtex-button)
+    :global(.vtex-button__label)
+      :global(.vtex-login-2-x-oauthLabel),
+:global(.vtex-login-2-x-googleOptionBtn)
+  :global(.vtex-button)
+    :global(.vtex-button__label)
+      :global(.vtex-login-2-x-oauthLabel),
+:global(.vtex-login-2-x-accessCodeOptionBtn)
+  :global(.vtex-button)
+    :global(.vtex-button__label),
+:global(.vtex-login-2-x-emailPasswordOptionBtn)
+  :global(.vtex-button)
+    :global(.vtex-button__label){
+      font-size: 12px;
+    }
+
+:global(.vtex-menu-2-x-styledLinkContent--titcat){
+  font-family: 'Novecento-Medium';
+  color: #000000;
+  font-size: 12px;
+}
+
+
+:global(.vtex-rich-text-0-x-link--txtubicaciones):hover,
+:global(.vtex-menu-2-x-styledLinkContent--topmenu):hover,
+:global(.vtex-menu-2-x-styledLinkContent--hmen):hover,
+:global(.vtex-menu-2-x-styledLinkContent--titcat):hover,
+:global(.vtex-menu-2-x-styledLinkContent--catprinmen):hover{
+  color: #82BC00;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--catprinmen){
+  font-family: 'Century Gothic';
+  color: #8A868C;
+  font-size: 14px;
+}
+
+:global(.vtex-menu-2-x-submenuWrapper--subcontainer){
+  z-index: 100;
+}
+
+
+:global(.vtex-menu-2-x-submenuWrapper--subcontainer){  
+  border-top: 2px solid #EEEEE4;
+  border-bottom: 2px solid #82BC00;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowmenprin){
+  justify-content: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--notifbarow){
+  background-color: #505F4A;
+  height: 32px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--notifbar),
+:global(.vtex-rich-text-0-x-link--notifbar){
+  font-size: 12px;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 0%;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--notifbar){
+  border-bottom: 1px solid #ffffff;
+}
+
+:global(.vtex-rich-text-0-x-link--notifbar){
+  text-decoration: none;
+}
+
+:global(.vtex-store-components-3-x-searchIcon--stylesrch){
+  display: none;
+}
+
+:global(.vtex-store-components-3-x-searchBarIcon--stylesrch--search)::before{
+  content: url(assets/lupa.png);
+  padding-top: 5px;
+  padding-left: 5px;
+}

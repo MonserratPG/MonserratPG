@@ -1,0 +1,84 @@
+.galleryLayoutOptionButton {
+  background-color: #F0F0F0;
+  color: #3F3F40;
+  padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+}
+
+.galleryLayoutOptionButton--selected {
+  background-color: #3F3F40;
+  color: #FFFFFF;
+}
+
+.galleryLayoutSwitcher {
+  border-radius: 4px 4px 4px 4px;
+  justify-content: center;
+  overflow: hidden;
+  width: auto !important;
+  align-self: center
+}
+
+.galleryItem--list {
+  border-bottom: 1px #E7E9EE solid;
+}
+
+:global(.vtex-search-result-3-x-galleryTitle--layout){
+  text-align: center;
+  font-size: 32px;
+  margin-top: 0%;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--filterCol){
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+:global(.vtex-breadcrumb-1-x-homeIcon){
+ width: 0%; 
+}
+
+:global(.vtex-breadcrumb-1-x-homeLink)::before{
+  content: "INICIO";
+  font-size: 10px;
+  position: relative;
+  bottom: 9px;
+  left: 27px;
+}
+
+:global(.vtex-search-result-3-x-filterPopupTitle){
+  font-weight: 600;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexColChild--filterMobileCol)
+:global(.vtex-search-result-3-x-filterPopupButton){
+  display: flex;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--filterMobileCol)
+  :global(.vtex-search-result-3-x-filterPopupButton)
+    :global(.vtex-search-result-3-x-filterPopupTitle){
+      order: 1;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexColChild--filterMobileCol)
+  :global(.vtex-search-result-3-x-filterPopupButton)
+    :global(.vtex-search-result-3-x-filterIcon){
+      padding-left: 0px !important;
+      padding-right: 8px;
+}
+
+:global(.vtex-slider__selector),
+:global(.vtex-slider__base-internal){
+  background-color: #82BC00 !important;
+}
+
+:global(.vtex-search-result-3-x-searchResultContainer){
+  padding-top: 0 !important;
+  padding-left: 15px;
+}
+
+
+:global(.vtex-breadcrumb-1-x-container){
+  font-size: 10px;
+}

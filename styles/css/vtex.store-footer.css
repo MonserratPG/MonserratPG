@@ -1,0 +1,107 @@
+.row--menu-row {
+  padding-right: 24px;  
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;  
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-row){
+  background-color: #f8f8f8;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+
+
+:global(.vtex-menu-2-x-styledLinkContent--titfoo),
+:global(.vtex-menu-2-x-styledLinkContent--titfoo2){
+  color: black;
+  font-weight: 600;
+  font-family: 'Century Gothic';
+}
+
+:global(.vtex-rich-text-0-x-paragraph--titnosfoo){
+  color: black;
+  font-weight: 600;
+  margin-top: 0%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowmen2){
+  padding-top: 25px;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--txtnosfoo)
+  :global(.vtex-rich-text-0-x-paragraph){
+    text-align: justify;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--titfoo2){
+  color: black;
+  font-weight: 600;
+  padding-bottom: 25px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--colfoo){
+  height: auto !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--colfoo){
+  padding: 15px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--rowpowered){
+  width: 72% !important;
+}
+
+
+:global(.vtex-menu-2-x-styledLinkContent--menfoomob),
+:global(.vtex-rich-text-0-x-paragraph--titnosfoo){
+  font-size: 16px;
+  font-family: 'Century Gothic';
+  font-weight: 600;
+}
+
+:global(.vtex-menu-2-x-menuItemInnerDiv--menfoomob){
+  padding: 15px 0px;
+  border-bottom: 2px solid #a1a1a1;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--menfoomob)
+  :global(.vtex-menu-2-x-accordionIcon--menfoomob--isClosed),
+:global(.vtex-menu-2-x-styledLinkContent--menfoomob)
+  :global(.vtex-menu-2-x-accordionIcon--menfoomob--isOpen){
+    font-size: 0;
+  }
+
+:global(.vtex-menu-2-x-styledLinkContent--menfoomob)
+  :global(.vtex-menu-2-x-accordionIcon--menfoomob--isClosed)::before{
+    content: url(assets/arrowclosed.png);
+    width: 23px;
+  }
+
+:global(.vtex-menu-2-x-styledLinkContent--menfoomob)
+  :global(.vtex-menu-2-x-accordionIcon--menfoomob--isOpen)::before{
+    content: url(assets/arrowopen.png);
+    width: 23px;
+  }
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowpm){
+  justify-content: flex-start;
+  padding-left: 25px;
+}
+
+:global(.vtex-store-components-3-x-imageElement--paypalimg){
+  padding-left: 20px;
+}
+
+@media (max-width: 1024px){
+  :global(.vtex-flex-layout-0-x-flexRowContent--rowpm){
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  
+
+}

@@ -1,0 +1,50 @@
+.flexRow--productSpecificationGroup:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.flexRow--productSpecificationGroupName {
+  background-color: #eaeaea;
+  padding: 0.5rem 1rem;
+}
+
+.flexCol--productSpecificationName {
+  padding: 1rem;
+}
+
+.flexCol--productSpecificationValue {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.flexRow--productSpecification:nth-child(even) {
+  background-color: #f9f9f9;
+}
+:global(.vtex-store-components-3-x-container) {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+:global(.vtex-search-result-3-x-buttonShowMore){
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+.translate--50y {
+  visibility: hidden !important;
+  transform: translate(0, -50%);
+}
+.vtex-store-components-3-x-productImagesGallerySlide.center-all.swiper-slide-active {
+  padding-left: 25px;
+}
+.vtex-store-components-3-x-swiperCaretNext{
+  visibility: hidden;
+}
+.vtex-store-components-3-x-swiperCaretPrev{
+  visibility: hidden;
+}
+.vtex-store-components-3-x-swiper-pagination {
+  visibility: hidden;
+}
+.vtex-store-components-3-x-swiperPaginationClickable{
+  visibility: hidden;
+}
+.vtex-store-components-3-x-swiperCaret{
+  visibility: hidden;
+}

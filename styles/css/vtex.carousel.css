@@ -1,0 +1,10 @@
+.containerImg {
+  background-color: #ffffff !important;
+}
+
+.containerImg .img {
+  max-width: none;
+}
+:global(.vtex-slider-layout-0-x-sliderTrackContainer){
+  max-width: none !important;
+}

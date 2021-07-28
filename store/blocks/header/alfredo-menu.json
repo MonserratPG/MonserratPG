@@ -1,0 +1,56 @@
+{
+    "vtex.menu@2.x:menu#menu-alfrd":{
+        "props": {
+            "experimentalOptimizeRendering": true
+          },
+        "children":[
+            "menu-item#abarrotes",
+            "menu-item#fyv"
+        ]
+    },
+
+    "menu-item#abarrotes":{
+        "props":{
+            "type": "custom",
+            "href": "/abarrotes",
+            "text": "Abarrotes"
+        }
+    },
+    "menu-item#fyv":{
+        "props":{
+            "type": "custom",
+            "href": "/frutas-y-verduras",
+            "text": "Frutas y Verduras"
+        },
+        "children":[
+            "vtex.menu@2.x:submenu#submenu-fyv"
+        ]
+    },
+
+    "vtex.menu@2.x:submenu#submenu-fyv":{
+        "children":[
+            "menu-item#frutas",
+            "menu-item#verduras"
+        ]
+    },
+    "menu-item#frutas":{
+        "props":{
+            "type": "custom",
+            "href": "/abarrotes",
+            "text": "Frutas"
+        }
+    },
+    "menu-item#verduras":{
+        "props":{
+            "type": "custom",
+            "href": "/abarrotes",
+            "text": "Verduras"
+        }
+    }
+
+    
+
+
+
+
+}

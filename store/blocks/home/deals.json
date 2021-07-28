@@ -1,0 +1,70 @@
+{
+  "flex-layout.row#deals": {
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3"
+    ],
+    "props": {
+      "blockClass": "deals"
+    }
+  },
+
+  "flex-layout.col#deals1": {
+    "children": [
+      "image#deal1",
+      "rich-text#deal1"    
+    ]
+  },
+  "image#deal1": {
+    "props": {
+      "maxHeight":66,
+      "src": "assets/enviobg.png",
+      "blockClass":"imagedeals"
+    }
+  },
+  "rich-text#deal1": {
+    "props": {
+      "text": "ENTREGA INMEDIATA",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals2": {
+    "children": [
+      "image#deal2",
+      "rich-text#deal2"
+    ]
+  },
+  "image#deal2": {
+    "props": {
+      "maxHeight":66,
+      "src": "assets/multiplesbg.png",
+      "blockClass":"imagedeals"
+    }
+  },
+  "rich-text#deal2": {
+    "props": {
+      "text": "MÚLTIPLES MÉTODOS DE PAGO",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals3": {
+    "children": [
+      "image#deal3",
+      "rich-text#deal3"      
+    ]
+  },
+  "image#deal3": {
+    "props": {
+      "maxHeight":66,
+      "src": "assets/promosbg.png",
+      "blockClass":"imagedeals"
+    }
+  },
+  "rich-text#deal3": {
+    "props": {
+      "text": "PROMOCIONES ESPECIALES",
+      "blockClass": "deals"
+    }
+  }
+}

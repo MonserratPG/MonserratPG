@@ -1,0 +1,189 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#footernosotors",
+      "flex-layout.col#footermenu",
+      "flex-layout.col#footermenu2"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+  "flex-layout.col#footernosotors":{
+    "children":[
+      "rich-text#titnosotros",
+      "rich-text#footertext",
+      "list-context.image-list#social"
+    ],"props":{
+      "blockClass":"colfoo"
+    }
+  },"rich-text#titnosotros":{
+    "props":{
+      "text": "Nosotros",
+      "blockClass":"titnosfoo"
+    }
+  },"rich-text#footertext":{
+    "props":{
+      "text":"﻿﻿Somos la propuesta más completa de muebles y accesorios del mercado, con productos diseñados y elaborados especialmente para nuestros clientes. Nuestra excelencia innata se refleja con la calidad de materiales del más alto nivel, al igual que en nuestra confiabilidad y solidez.",
+      "blockClass":"txtnosfoo"
+    }
+  },
+
+  "flex-layout.col#footermenu":{
+    "children":[
+      "flex-layout.row#rowmen1",
+      "flex-layout.row#rowmen2"
+    ],"props":{
+      "blockClass":"colfoo"
+    }
+  },"flex-layout.row#rowmen1":{
+    "children":[      
+      "vtex.menu@2.x:menu#ayuda",
+      "vtex.menu@2.x:menu#comprar"
+    ]
+  },"flex-layout.row#rowmen2":{
+    "children":[      
+      "vtex.menu@2.x:menu#servicios",
+      "vtex.menu@2.x:menu#estilo"
+    ],"props":{
+      "blockClass":"rowmen2"
+    }
+  },
+  "flex-layout.col#footermenu2":{
+    "children":[
+      "menu-item#ofertass",
+      "menu-item#politicas",
+      "menu-item#terminos",
+      "flex-layout.row#pymethod"
+    ],"props":{
+      "blockClass":"colfoo"
+    }
+  },
+  
+
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "flex-layout.col#social",
+      "flex-layout.col#spacer",
+      "flex-layout.col#pb"
+    ]
+  },
+  "flex-layout.col#social":{
+    "children":[
+      "list-context.image-list#social"
+    ],"props":{
+      "width":"33%"
+    }
+  },
+
+  "list-context.image-list#social": {
+    "children": ["slider-layout#imgsocial"],
+    "props": {
+      "height": 34,
+      "images": [
+        {
+          "image": "assets/facebook.png",
+          "mobileImage": "assets/facebook.png",
+          "link":{
+            "url": "https://www.facebook.com/mobicamx",
+            "openNewTab":true
+          } 
+        },
+        {
+          "image": "assets/instagram.png",
+          "mobileImage": "assets/instagram.png",
+          "link": {
+            "url": "https://www.instagram.com/mobicamx",
+            "openNewTab":true
+          }
+        },
+        {
+          "image": "assets/pinterest.png",
+          "mobileImage": "assets/pinterest.png",
+          "link":{
+            "url": "https://www.pinterest.com.mx/mobicamx",
+            "openNewTab":true
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#imgsocial": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 4,
+        "phone": 4
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carouselsocial"
+    }
+  },
+
+  "flex-layout.col#pb":{
+    "children":[
+      "flex-layout.row#pymethod"
+    ],"props":{
+      "width":"33%"
+    }
+  },
+
+
+  "flex-layout.row#pymethod":{
+    "children":[
+      "image#amvo",
+      "image#paypal"
+    ],"props":{
+      "colSizing":"auto",
+      "blockClass":"rowpm",
+      "verticalAlign":"middle",
+      "preserveLayoutOnMobile":true
+    }
+  },
+  "image#amvo":{
+    "props":{
+      "src":"assets/amvo.png"
+    }
+  },
+
+  "image#paypal":{
+    "props":{
+      "maxHeight":19,
+      "src":"assets/paypal.png",
+      "blockClass": "paypalimg"
+    }
+  },
+
+
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#socialmob",
+      "flex-layout.row#pymethod"
+    ]
+  },
+  "flex-layout.row#socialmob":{
+    "children":[
+      "list-context.image-list#social"
+    ]
+  },
+ 
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4
+    },
+    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+  }
+}
