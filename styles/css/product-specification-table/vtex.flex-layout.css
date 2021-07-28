@@ -33,18 +33,3 @@
 .vtex-store-components-3-x-productImagesGallerySlide.center-all.swiper-slide-active {
   padding-left: 25px;
 }
-.vtex-store-components-3-x-swiperCaretNext{
-  visibility: hidden;
-}
-.vtex-store-components-3-x-swiperCaretPrev{
-  visibility: hidden;
-}
-.vtex-store-components-3-x-swiper-pagination {
-  visibility: hidden;
-}
-.vtex-store-components-3-x-swiperPaginationClickable{
-  visibility: hidden;
-}
-.vtex-store-components-3-x-swiperCaret{
-  visibility: hidden;
-}
